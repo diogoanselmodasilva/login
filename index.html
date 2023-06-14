@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/media-query.css">
+    <link rel="stylesheet" href="estilos/style-main.css">
+    <title>Tela de login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem vindo(a), faça login para acessar sua conta</p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <label for="mail"></label>
+                        <input type="email" name="email" id="mail" autocomplete="email" required maxlength="30" placeholder="Digite seu email">
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="32" autocomplete="current-password" placeholder="Digite sua senha">
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a href="#" class="botao">Esqueci a senha <span class="material-icons">email</span></a>
+                    <a href="#" class="botao">Cadastre</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
